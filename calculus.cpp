@@ -49,4 +49,7 @@ double mySqrt(double x) {
 
     
     return 0;
+/***
+bachbd da viet o day
+***/
 }
