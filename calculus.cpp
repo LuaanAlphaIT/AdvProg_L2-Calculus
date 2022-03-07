@@ -22,7 +22,7 @@ double myCos(double x)
 {
     double s=0;
     int i=0, a=1;
-    while (abs (pow (-1, i/2)*pow (x, i*1.0)/a) > 0.001)
+    while (abs (pow (-1, i/2)*pow (x, i*1.0)/a) > 0.00001)
     {
       s+=pow (-1, i/2)*pow (x, i*1.0)/a;
       a=a*(i+1)*(i+2);
@@ -42,7 +42,7 @@ double mySin(double x)
 {
     double s=0;
     int i=1, a=1;
-    while (abs (pow (-1, (i-1)/2)*pow (x, i*1.0)/a) > 0.001)
+    while (abs (pow (-1, (i-1)/2)*pow (x, i*1.0)/a) > 0.00001)
     {
       s+=pow (-1, (i-1)/2)*pow (x, i*1.0)/a;
       a=a*(i+1)*(i+2);
@@ -72,8 +72,4 @@ double mySqrt(double x) {
         if (z==y) return z;
         } while (z!=y);
 } }
-}
-
-    
-    return 0;
 }
